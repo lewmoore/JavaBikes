@@ -3,15 +3,20 @@ package JavaBikes;
         import org.assertj.core.api.Assertions;
         import org.junit.Test;
 
-public class DockingStationTest {
 
+public class DockingStationTest {
+    DockingStation dockingStation = new DockingStation();
 
 
     @Test
     public void NewDockingStation(){
-        DockingStation dockingStation = new DockingStation();
 
         Assertions.assertThat(dockingStation).isInstanceOf(DockingStation.class);
+    }
+
+    @Test
+    public void HasArrayOfFiveBikes(){
+        Assertions.assertThat(dockingStation.bikesArray).hasSize(5);
     }
 
 }
