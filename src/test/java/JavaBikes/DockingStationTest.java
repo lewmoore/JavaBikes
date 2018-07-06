@@ -10,7 +10,6 @@ public class DockingStationTest {
 
     @Test
     public void NewDockingStation(){
-
         Assertions.assertThat(dockingStation).isInstanceOf(DockingStation.class);
     }
 
