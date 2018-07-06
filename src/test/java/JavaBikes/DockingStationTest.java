@@ -14,8 +14,8 @@ public class DockingStationTest {
     }
 
     @Test
-    public void HasArrayOfFiveBikes(){
-        Assertions.assertThat(dockingStation.bikesArray).hasSize(5);
+    public void HasEmptyArray(){
+        Assertions.assertThat(dockingStation.bikesArray).isEmpty();
     }
 
 }
