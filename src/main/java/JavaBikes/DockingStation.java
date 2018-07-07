@@ -11,4 +11,10 @@ public class DockingStation {
         bikesArray.add(bike);
         return "Bike Added";
     }
+
+    public String removeBike(String bike){
+        bikesArray.remove(bike);
+        return "Bike removed successfully";
+    }
+
 }

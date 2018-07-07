@@ -24,4 +24,11 @@ public class DockingStationTest {
         Assertions.assertThat(dockingStation.bikesArray).contains("Bike");
     }
 
+    @Test
+    public void RemoveBikeFromArray(){
+        dockingStation.addBike("Bike");
+        dockingStation.removeBike("Bike");
+        Assertions.assertThat(dockingStation.bikesArray).isEmpty();
+    }
+
 }
