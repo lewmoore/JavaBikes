@@ -18,4 +18,10 @@ public class DockingStationTest {
         Assertions.assertThat(dockingStation.bikesArray).isEmpty();
     }
 
+    @Test
+    public void AddsBikeToArray(){
+        dockingStation.addBike("Bike");
+        Assertions.assertThat(dockingStation.bikesArray).contains("Bike");
+    }
+
 }
