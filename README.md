@@ -2,6 +2,8 @@
 
 Java implementation of Boris Bikes application.
 
+This application will store Bike objects in an ArrayList within a DockingStation. The user will be able to add and remove bikes that are showing as working
+
 User Stories:
 
 ```
