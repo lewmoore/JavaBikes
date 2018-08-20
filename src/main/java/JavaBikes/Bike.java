@@ -2,6 +2,12 @@ package JavaBikes;
 
 public class Bike {
 
-    boolean isWorking = true;
+    boolean isWorking;
+
+    public Bike()
+    {
+        this.isWorking = true;
+    }
+
 
 }
