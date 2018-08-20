@@ -20,9 +20,16 @@ public class BikeTest {
     }
 
     @Test
-    public void BikeIsWorkingCanBeSetToFalse()
+    public void SetBikeToWorking()
     {
-        bike.setStatus(false);
+        bike.setBikeAsWorking();
+        Assertions.assertThat(bike.isWorking).isEqualTo(true);
+    }
+
+    @Test
+    public void SetBikeAsBroken()
+    {
+        bike.setBikeAsBroken();
         Assertions.assertThat(bike.isWorking).isEqualTo(false);
     }
 }

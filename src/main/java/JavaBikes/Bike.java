@@ -9,8 +9,13 @@ public class Bike {
         this.isWorking = status;
     }
 
-    public void setStatus(boolean status)
+    public boolean setBikeAsWorking()
     {
-        this.isWorking = status;
+        return this.isWorking = true;
+    }
+
+    public boolean setBikeAsBroken()
+    {
+        return this.isWorking = false;
     }
 }
