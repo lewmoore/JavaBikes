@@ -18,8 +18,11 @@ public class DockingStation {
     }
 
     public String removeBike(Bike bike){
-        bikesArray.remove(bike);
-        return "Bike removed successfully";
+        if (bike.getStatus()){
+            bikesArray.remove(bike);
+            return "Bike removed successfully";
+        }
+        return "This bike is broken";
     }
 
 }

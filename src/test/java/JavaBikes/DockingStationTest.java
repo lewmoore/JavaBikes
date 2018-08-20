@@ -29,7 +29,16 @@ public class DockingStationTest {
     @Test
     public void RemoveBikeFromArray(){
         dockingStation.addBike(mockedBike);
+        when(mockedBike.getStatus()).thenReturn(true);
         dockingStation.removeBike(mockedBike);
         Assertions.assertThat(dockingStation.bikesArray).isEmpty();
+    }
+
+    @Test
+    public void WontReturnBrokenBike()
+    {
+        dockingStation.addBike(mockedBike);
+        when(mockedBike.getStatus()).thenReturn(false);
+        Assertions.assertThat(dockingStation.removeBike(mockedBike)).isEqualTo("This bike is broken");
     }
 }
