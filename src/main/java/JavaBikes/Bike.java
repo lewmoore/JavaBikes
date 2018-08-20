@@ -4,9 +4,9 @@ public class Bike {
 
     boolean isWorking;
 
-    public Bike()
+    public Bike(boolean status)
     {
-        this.isWorking = true;
+        this.isWorking = status;
     }
 
     public void setStatus(boolean status)

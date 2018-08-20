@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class BikeTest {
 
-    private Bike bike = new Bike();
+    private Bike bike = new Bike(true);
 
     @Test
     public void IsInstanceOfBike()

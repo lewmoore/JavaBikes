@@ -32,12 +32,4 @@ public class DockingStationTest {
         dockingStation.removeBike(mockedBike);
         Assertions.assertThat(dockingStation.bikesArray).isEmpty();
     }
-
-    @Test
-    public void DoesntRemoveBrokenBikes()
-    {
-    }
-
-
-
 }
