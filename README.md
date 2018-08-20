@@ -26,4 +26,8 @@ As a user,
 So I can always get a working bike,
 Id like to not be able to remove broken bikes
 ```
-
+```$xslt
+As a user,
+So I can let other users get a working bike,
+Id like to be able to mark a bike as broken
+```
