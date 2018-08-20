@@ -21,15 +21,9 @@ As a user,
 So I can let other people use the bikes,
 I'd like to be able to return a bike
 ```
-
-```
-As a user,
-So I can enjoy my biking experience,
-I'd like to know if a bike is working or not
-```
-
 ```
 As a user,
 So I can always get a working bike,
 Id like to not be able to remove broken bikes
 ```
+
