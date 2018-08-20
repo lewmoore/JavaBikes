@@ -5,14 +5,14 @@ import java.util.ArrayList;
 
 public class DockingStation {
 
-    ArrayList<String> bikesArray = new ArrayList<>(20);
+    ArrayList<Bike> bikesArray = new ArrayList<>(20);
 
-    public String addBike(String bike){
+    public String addBike(Bike bike){
         bikesArray.add(bike);
         return "Bike Added";
     }
 
-    public String removeBike(String bike){
+    public String removeBike(Bike bike){
         bikesArray.remove(bike);
         return "Bike removed successfully";
     }

@@ -1,12 +1,13 @@
 package JavaBikes;
 
-        import org.assertj.core.api.Assertions;
-        import org.junit.Test;
-
+import org.assertj.core.api.Assertions;
+import org.junit.Test;
+import static org.mockito.Mockito.mock;
 
 public class DockingStationTest {
-    DockingStation dockingStation = new DockingStation();
 
+    DockingStation dockingStation = new DockingStation();
+    Bike mockedBike = mock(Bike.class);
 
     @Test
     public void NewDockingStation(){
@@ -20,15 +21,17 @@ public class DockingStationTest {
 
     @Test
     public void AddsBikeToArray(){
-        dockingStation.addBike("Bike");
-        Assertions.assertThat(dockingStation.bikesArray).contains("Bike");
+        dockingStation.addBike(mockedBike);
+        Assertions.assertThat(dockingStation.bikesArray).contains(mockedBike);
     }
 
     @Test
     public void RemoveBikeFromArray(){
-        dockingStation.addBike("Bike");
-        dockingStation.removeBike("Bike");
+        dockingStation.addBike(mockedBike);
+        dockingStation.removeBike(mockedBike);
         Assertions.assertThat(dockingStation.bikesArray).isEmpty();
     }
+
+
 
 }
