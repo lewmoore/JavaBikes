@@ -12,4 +12,10 @@ public class BikeTest {
     {
         Assertions.assertThat(bike).isInstanceOf(Bike.class);
     }
+
+    @Test
+    public void BikeIsWorkingByDefault()
+    {
+        Assertions.assertThat(bike.isWorking).isEqualTo(true);
+    }
 }
