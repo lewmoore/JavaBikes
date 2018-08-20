@@ -18,4 +18,11 @@ public class BikeTest {
     {
         Assertions.assertThat(bike.isWorking).isEqualTo(true);
     }
+
+    @Test
+    public void BikeIsWorkingCanBeSetToFalse()
+    {
+        bike.setStatus(false);
+        Assertions.assertThat(bike.isWorking).isEqualTo(false);
+    }
 }

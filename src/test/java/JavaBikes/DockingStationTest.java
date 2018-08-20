@@ -3,6 +3,7 @@ package JavaBikes;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 public class DockingStationTest {
 
@@ -30,6 +31,11 @@ public class DockingStationTest {
         dockingStation.addBike(mockedBike);
         dockingStation.removeBike(mockedBike);
         Assertions.assertThat(dockingStation.bikesArray).isEmpty();
+    }
+
+    @Test
+    public void DoesntRemoveBrokenBikes()
+    {
     }
 
 
