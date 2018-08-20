@@ -4,9 +4,9 @@ public class Bike {
 
     boolean isWorking;
 
-    public Bike(boolean status)
+    public Bike()
     {
-        this.isWorking = status;
+        this.isWorking = true;
     }
 
     public boolean setBikeAsWorking()
@@ -17,5 +17,10 @@ public class Bike {
     public boolean setBikeAsBroken()
     {
         return this.isWorking = false;
+    }
+
+    public boolean getStatus()
+    {
+        return isWorking;
     }
 }

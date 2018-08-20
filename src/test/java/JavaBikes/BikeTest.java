@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class BikeTest {
 
-    private Bike bike = new Bike(true);
+    private Bike bike = new Bike();
 
     @Test
     public void IsInstanceOfBike()
@@ -31,5 +31,11 @@ public class BikeTest {
     {
         bike.setBikeAsBroken();
         Assertions.assertThat(bike.isWorking).isEqualTo(false);
+    }
+
+    @Test
+    public void GetBikeStatusWorkingByDefault()
+    {
+        Assertions.assertThat(bike.getStatus()).isEqualTo(true);
     }
 }
